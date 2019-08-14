@@ -1,0 +1,156 @@
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  background: #333;
+  width: 100%;
+  @media (max-width: 992px) {
+    display: block;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    height: 35px;
+    align-items: center;
+    align-content: space-between;
+    padding: 0 20px;
+  }
+
+  .img-profile {
+    height: 25px;
+  }
+}
+
+#menuSider {
+  @media (max-width: 992px) {
+    display: none;
+  }
+
+  background-color: #333;
+  color: #fff;
+  width: 300px;
+  height: 130vh;
+  top: 0;
+  padding: 20px 20px;
+  float: left;
+
+  .img-profile {
+    margin: 20px auto 0;
+    height: 80px;
+    display: block;
+  }
+
+  .header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+  }
+
+  .infos {
+    padding: 0 20px;
+
+    .description {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .contacts {
+      text-align: center;
+      list-style: none;
+      margin-top: 20px;
+
+      li {
+        margin-bottom: 5px;
+      }
+    }
+
+    .address {
+      color: #fff;
+      text-align: center;
+      margin: 20px 0;
+      display: block;
+
+      .link {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .headinfo {
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+
+    &:after {
+      content: ' ';
+      width: 140px;
+      height: 6px;
+      display: block;
+      margin: 0 auto;
+      border-bottom: 1px solid #fff;
+    }
+
+  }
+
+  .skills {
+    text-align: center;
+
+    .list {
+      margin-top: 20px;
+      list-style: none;
+
+      .progress {
+        width: 100%;
+        border: 1px solid #fff;
+        height: 10px;
+        display: block;
+        position: relative;
+        margin: 5px 0;
+
+        .progress-porcent {
+          background: #fff;
+          width: 50%;
+          height: 10px;
+          display: block;
+        }
+      }
+    }
+  }
+
+}
+
+#content {
+
+  margin-left: 370px;
+  padding: 50px 0;
+
+  @media (max-width: 992px) {
+    margin-left: 0;
+    padding: 50px 20px;
+  }
+
+  .title-section {
+    margin-bottom: 10px;
+    font-size: 2em;
+  }
+
+  .experience {
+    margin: 30px 0;
+
+    .jobtitle {
+      text-transform: uppercase;
+    }
+
+    .date {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .description {
+      margin-top: 10px;
+    }
+  }
+
+}

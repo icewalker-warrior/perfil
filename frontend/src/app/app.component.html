@@ -1,0 +1,58 @@
+<nav id="mobile-nav">
+  <div class="nav">
+    <img src="{{profiles$.image}}"
+      class="img-profile" alt="{{profiles$.name}}">
+    <span>{{profiles$.name}}</span>
+  </div>
+</nav>
+<aside id="menuSider">
+  <img src="{{profiles$.image}}"
+    class="img-profile" alt="{{profiles$.name}}">
+  <div class="header">
+    <h1 class="name">{{profiles$.name}}</h1>
+    <h2 class="profetional">{{profiles$.profession}}</h2>
+  </div>
+
+  <div class="infos">
+    <h3 class="headinfo">Profile</h3>
+    <p class="description">{{profiles$.description}}</p>
+
+    <h3 class="headinfo">Contact</h3>
+    <ul class="contacts">
+      <li>{{profiles$.contact.tel}}</li>
+      <li>{{profiles$.contact.cel}}</li>
+    </ul>
+
+    <div class="address">{{profiles$.contact.address}}</div>
+    <div class="address">
+      <a href="{{profiles$.contact.website}}" class="link">{{profiles$.contact.website}}</a>
+      <a href="mailTo:{{profiles$.contact.mail}}" class="link">{{profiles$.contact.mail}}</a>
+    </div>
+
+    <div class="skills">
+      <h3 class="headinfo">Skills</h3>
+      <ul class="list">
+        <li *ngFor="let skill of profiles$.skills">{{skill.name}} <span class="progress"><span class="progress-porcent"
+              [ngStyle]="{'width':skill.value}"></span></span></li>
+      </ul>
+    </div>
+
+  </div>
+
+
+
+
+</aside>
+
+<div id="content">
+  <section>
+    <h3 class="title-section">Work Experience</h3>
+    <hr>
+    <article class="experience" *ngFor="let experience of profiles$.experiences">
+      <h4 class="jobtitle">{{experience.name}}</h4>
+      <span class="date">{{experience.date}}</span>
+      <p class="description">{{experience.description}}</p>
+    </article>
+
+  </section>
+</div>
