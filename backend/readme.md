@@ -13,3 +13,6 @@ Migrar a tabelas
 
 Popule o bando de dados
 `$ php artisan db:seed`
+
+Para subir o server
+`$ php -S localhost:3000 -t public/`
